@@ -8,5 +8,16 @@
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "#CharacterRangeLen=27&amp;CharacterRangeLoc=3918&amp;EndingColumnNumber=28&amp;EndingLineNumber=144&amp;StartingColumnNumber=1&amp;StartingLineNumber=144&amp;Timestamp=476207179.570117"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "#CharacterRangeLen=17&amp;CharacterRangeLoc=3946&amp;EndingColumnNumber=18&amp;EndingLineNumber=145&amp;StartingColumnNumber=1&amp;StartingLineNumber=145&amp;Timestamp=476207179.570249"
+         lockedSize = "{307, 401}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
    </TimelineItems>
 </Timeline>

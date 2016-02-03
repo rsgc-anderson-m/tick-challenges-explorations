@@ -78,10 +78,78 @@ studentRandomPosition
 // ABOVE: An example of using a "regular" loop to iterate over an array.
 // We've illustrated a common run-time error - out of bounds condition. We ran over the end of the array.
 
+
+var highestValue = -1       // the highest number
+var highestValueIndex = -1  // the highest position
+
+// loop over this list
 for (index, value) in studentRandomPosition.enumerate() {
     print("The index is \(index) and the value is \(value)")
+
+    // check the highest value so far against the current value
+    if value > highestValue {
+       
+        // current is highest, so it becomes the new highest
+        highestValue = value
+        highestValueIndex = index
+    }
     
 }
+
+highestValue
+highestValueIndex
+
+
+
+
+
+// *** Now... finish the job
+// Very basic algorithm to randomize this list of students
+//
+//      - repeat until the unsorted list empty
+//          - scan all values in unsorted list, find highest value
+//          - add highest value to the end of the new list
+//          - move the corresponding student name to end of new list of names
+//          - remove name and the value from the original lists
+
+// Create the empty sorted list
+var studentListSorted = [String]()
+var studentRandomPositionSorted = [Int] ()
+
+while !studentList.isEmpty {
+
+    
+    highestValue = -1
+    highestValueIndex = -1
+    
+    // loop over this list
+    for (index, value) in studentRandomPosition.enumerate() {
+        print("The index is \(index) and the value is \(value)")
+        
+        if value > highestValue {
+            highestValue = value
+            highestValueIndex = index
+        }
+        
+    }
+
+    // Put value and name in new list
+    studentListSorted.append(studentList[highestValueIndex])
+    studentRandomPositionSorted.append(highestValue)
+    
+    // Remove value and name from unsorted list
+    studentList.removeAtIndex(highestValueIndex)
+    studentRandomPosition.removeAtIndex(highestValueIndex)
+}
+
+studentRandomPositionSorted
+studentListSorted
+
+
+
+
+
+
 
 
 
