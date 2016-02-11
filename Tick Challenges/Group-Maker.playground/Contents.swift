@@ -2,15 +2,8 @@
 
 import Cocoa
 
-<<<<<<< HEAD
-// Specifications
-// 1. Create 'n' number of group from the list given
-// 2. Groups should be randomized
-
-=======
 // Input Data
 //
->>>>>>> rsgc-ics3u-2015/master
 //Matthew Anderson
 //Stuart Armstrong
 //Puneet Bagga
@@ -36,14 +29,11 @@ import Cocoa
 //Matthew Pritchard
 //Sean Trevor
 
-<<<<<<< HEAD
-=======
 // Specifications
 //
 // 1. Create 'n' number of groups from the list given.
 // 2. Groups should be randomized.
 
->>>>>>> rsgc-ics3u-2015/master
 // Create data structure
 // NOTE: Data structures should be named using camelCasing
 var studentList = [String]()
@@ -73,13 +63,7 @@ studentList.append("Carlos Noble Curveira")
 studentList.append("Matthew Pritchard")
 studentList.append("Sean Trevor")
 
-<<<<<<< HEAD
-
 // Build a parallel array that has random values for each student
-
-=======
-// Build a parallel array that has random values for each student
->>>>>>> rsgc-ics3u-2015/master
 var studentRandomPosition = [Int]()
 for i in 1...25 {
     print("\(i)")
@@ -88,27 +72,6 @@ for i in 1...25 {
 // See what's there...
 studentRandomPosition
 
-<<<<<<< HEAD
-// Find the highest number in the list of random numbers
-//for i in 1...25 {
-//    print("The current value is: \(studentRandomPosition[i])")
-//}
-// ABOVE: An example of using a "regular" loop to iterate over an array.
-// We've illustrated a common run-time error - out of bounds condition. We ran over the end of the array.
-
-
-var highestValue = -1       // the highest number
-var highestValueIndex = -1  // the highest position
-
-// loop over this list
-for (index, value) in studentRandomPosition.enumerate() {
-    print("The index is \(index) and the value is \(value)")
-
-    // check the highest value so far against the current value
-    if value > highestValue {
-       
-        // current is highest, so it becomes the new highest
-=======
 // we need to keep track of the position of the number that is the highest so far.  Also, it's index.
 
 var highestValue = -1           // the highest number
@@ -123,50 +86,17 @@ for (index, value) in studentRandomPosition.enumerate() {
     if value > highestValue {
         
         // current is higher, so it becomes the new highest
->>>>>>> rsgc-ics3u-2015/master
         highestValue = value
         highestValueIndex = index
     }
     
 }
 
-<<<<<<< HEAD
-=======
 // Did this work?
->>>>>>> rsgc-ics3u-2015/master
 highestValue
 highestValueIndex
 
 
-<<<<<<< HEAD
-
-
-
-// *** Now... finish the job
-// Very basic algorithm to randomize this list of students
-//
-//      - repeat until the unsorted list empty
-//          - scan all values in unsorted list, find highest value
-//          - add highest value to the end of the new list
-//          - move the corresponding student name to end of new list of names
-//          - remove name and the value from the original lists
-
-// Create the empty sorted list
-var studentListSorted = [String]()
-var studentRandomPositionSorted = [Int] ()
-
-while !studentList.isEmpty {
-
-    
-    highestValue = -1
-    highestValueIndex = -1
-    
-    // loop over this list
-    for (index, value) in studentRandomPosition.enumerate() {
-        print("The index is \(index) and the value is \(value)")
-        
-        if value > highestValue {
-=======
 // *** Now... finish the job.
 //  Very basic algorithm to randomize this list of students
 //
@@ -197,24 +127,11 @@ while !studentList.isEmpty {    // while NOT studentList is empty
         if value > highestValue {
             
             // current is higher, so it becomes the new highest
->>>>>>> rsgc-ics3u-2015/master
             highestValue = value
             highestValueIndex = index
         }
         
     }
-<<<<<<< HEAD
-
-    // Put value and name in new list
-    studentListSorted.append(studentList[highestValueIndex])
-    studentRandomPositionSorted.append(highestValue)
-    
-    // Remove value and name from unsorted list
-    studentList.removeAtIndex(highestValueIndex)
-    studentRandomPosition.removeAtIndex(highestValueIndex)
-}
-
-=======
     
     // Put highest value and corresponding name at end of new list
     studentListSorted.append(studentList[highestValueIndex])
@@ -227,7 +144,6 @@ while !studentList.isEmpty {    // while NOT studentList is empty
 }
 
 // What do we have now?
->>>>>>> rsgc-ics3u-2015/master
 studentRandomPositionSorted
 studentListSorted
 
@@ -239,8 +155,6 @@ studentListSorted
 
 
 
-<<<<<<< HEAD
-=======
 
 
 
@@ -258,4 +172,3 @@ studentListSorted
 
 
 
->>>>>>> rsgc-ics3u-2015/master
